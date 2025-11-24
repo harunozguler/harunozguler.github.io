@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Not Hesaplama Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menü -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#ana">Ana Sayfa</a></li>
+            <li><a href="#hesaplama">Not Hesaplama</a></li>
+            <li><a href="#hakkinda">Hakkında</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ana Sayfa -->
+    <section id="ana" class="section">
+        <h1>Hoş Geldiniz</h1>
+        <p>Bu web sitesi, HTML – CSS – JavaScript kullanılarak hazırlanmış bir öğrenci projesidir.</p>
+
+        <!-- OKUL LOGOSU -->
+        <img src="logo.png" width="180" alt="Okul Logosu">
+    </section>
+
+    <!-- Hesaplama -->
+    <section id="hesaplama" class="section">
+        <h2>Not Hesaplama Sistemi</h2>
+
+        <label>Vize Notu:</label>
+        <input type="number" id="vize">
+
+        <label>Final Notu:</label>
+        <input type="number" id="final">
+
+        <button id="hesaplaBtn">Hesapla</button>
+
+        <div id="sonuc">
+            <p id="ortalama"></p>
+            <p id="harf"></p>
+            <p id="durum"></p>
+        </div>
+    </section>
+
+    <!-- Hakkında -->
+    <section id="hakkinda" class="section">
+        <h2>Hakkında</h2>
+
+        <p>Bu proje, Malatya Turgut Özal Üniversitesi için hazırlanmış bir öğrenci uygulamasıdır.</p>
+        <p>Not hesaplaması vizenin %40'ı ve finalin %60'ı alınarak yapılır.</p>
+        <p>Final notu 50’nin altındaysa öğrenci otomatik olarak dersten kalır.</p>
+        <p>Hesaplamalar JavaScript ile dinamik olarak yapılmaktadır.</p>
+    </section>
+
+    <!-- İletişim -->
+    <section id="iletisim" class="section">
+        <h2>İletişim</h2>
+
+        <!-- TELEFON GÖRSELİ -->
+        <img src="iletisim.png" width="100" alt="Telefon">
+
+        <p>E-posta: <strong>05230516041@ozal.edu.tr</strong></p>
+        <p>Okul: <strong>Malatya Turgut Özal Üniversitesi</strong></p>
+        <p>Bu site ile ilgili sorular için e-posta üzerinden iletişim kurabilirsiniz.</p>
+    </section>
+
+    <footer>
+        <p>Bu site bir öğrenci projesi olarak hazırlanmıştır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
